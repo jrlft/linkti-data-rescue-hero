@@ -14,7 +14,7 @@ const CallToAction = () => {
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute w-64 h-64 rounded-full bg-white/5 blur-xl top-20 right-20"></div>
         <div className="absolute w-40 h-40 rounded-full bg-white/5 blur-xl bottom-10 left-10"></div>
-        <div className="absolute w-20 h-20 rounded-full bg-linkti-blue/30 blur-lg top-40 left-1/3"></div>
+        <div className="absolute w-20 h-20 rounded-full bg-linkti-red/30 blur-lg top-40 left-1/3"></div>
       </div>
       
       <div className="container px-4 md:px-6 relative">
@@ -88,7 +88,7 @@ const CallToAction = () => {
           <div className="space-y-6" data-aos="fade-up" data-aos-delay="700">
             <Button 
               size="lg" 
-              className="bg-white text-linkti-blue hover:bg-white/90 hover:text-linkti-darkblue hover:scale-105 transition-all duration-300 shadow-lg"
+              className="bg-whatsapp text-white hover:bg-whatsapp/90 hover:scale-105 transition-all duration-300 shadow-lg"
               onClick={handleWhatsAppClick}
             >
               Fale Conosco no WhatsApp

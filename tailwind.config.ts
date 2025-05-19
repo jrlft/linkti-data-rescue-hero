@@ -71,9 +71,8 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				linkti: {
-					blue: '#0069b3',
-					darkblue: '#004476',
-					green: '#4CAF50',
+					red: '#BC0000',
+					darkred: '#7a0000',
 					gray: '#f5f5f7',
 					darkgray: '#333333',
 				},
@@ -81,6 +80,7 @@ export default {
 					gray: '#f5f5f7',
 					darkgray: '#333333',
 				},
+				whatsapp: '#25D366',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

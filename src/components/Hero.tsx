@@ -12,22 +12,22 @@ const Hero = () => {
     <section className="relative bg-gradient-hero py-24 md:py-32 overflow-hidden">
       {/* Animated particles/elements in background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute w-40 h-40 rounded-full bg-linkti-blue/10 blur-3xl top-20 left-[10%] animate-pulse-subtle"></div>
-        <div className="absolute w-60 h-60 rounded-full bg-linkti-blue/5 blur-3xl bottom-10 right-[5%] animate-pulse-subtle"></div>
-        <div className="absolute w-20 h-20 rounded-full bg-linkti-darkblue/20 blur-2xl top-32 right-[20%]"></div>
+        <div className="absolute w-40 h-40 rounded-full bg-linkti-red/10 blur-3xl top-20 left-[10%] animate-pulse-subtle"></div>
+        <div className="absolute w-60 h-60 rounded-full bg-linkti-red/5 blur-3xl bottom-10 right-[5%] animate-pulse-subtle"></div>
+        <div className="absolute w-20 h-20 rounded-full bg-linkti-darkred/20 blur-2xl top-32 right-[20%]"></div>
       </div>
 
       <div className="container px-4 md:px-6 flex flex-col lg:flex-row items-center relative z-10">
         <div className="flex-1 space-y-6 text-center lg:text-left lg:pr-8 mb-10 lg:mb-0" data-aos="fade-right" data-aos-delay="100">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
             <span className="block mb-2">Perdeu seus dados em um</span>
-            <span className="text-gradient bg-gradient-to-r from-blue-200 to-cyan-100">dispositivo Apple?</span>
+            <span className="text-gradient bg-gradient-to-r from-red-100 to-white">dispositivo Apple?</span>
           </h1>
           
-          <h2 className="text-xl md:text-2xl font-medium text-blue-100 max-w-2xl mx-auto lg:mx-0">
+          <h2 className="text-xl md:text-2xl font-medium text-red-100 max-w-2xl mx-auto lg:mx-0">
             A Link TI agora é <span className="relative inline-block">
               <span className="relative z-10">parceira oficial homologada pela Apple</span>
-              <span className="absolute bottom-0 left-0 w-full h-2 bg-linkti-blue/20"></span>
+              <span className="absolute bottom-0 left-0 w-full h-2 bg-linkti-red/20"></span>
             </span> para recuperação de dados de Mac, iPhone, iPad e armazenamentos externos.
           </h2>
           
@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="300">
             <Button 
               size="lg" 
-              className="bg-white text-linkti-blue hover:bg-blue-50 hover:scale-105 transition-all duration-300 shadow-lg"
+              className="bg-whatsapp text-white hover:bg-whatsapp/90 hover:scale-105 transition-all duration-300 shadow-lg"
               onClick={handleWhatsAppClick}
             >
               Fale Conosco no WhatsApp
@@ -58,7 +58,7 @@ const Hero = () => {
             </Button>
           </div>
           
-          <p className="text-blue-200 text-sm" data-aos="fade-up" data-aos-delay="400">
+          <p className="text-red-200 text-sm" data-aos="fade-up" data-aos-delay="400">
             Serviço internacional autorizado pela Apple | Frete grátis ida e volta
           </p>
         </div>
@@ -70,7 +70,7 @@ const Hero = () => {
           
           <div className="relative z-10">
             {/* Glow effect */}
-            <div className="absolute inset-0 bg-linkti-blue/20 blur-3xl rounded-full"></div>
+            <div className="absolute inset-0 bg-linkti-red/20 blur-3xl rounded-full"></div>
             
             {/* Hero image */}
             <div className="relative floating-delayed animated-border">
@@ -96,30 +96,30 @@ const Hero = () => {
       
       <div className="container mt-12 relative z-10">
         <div className="glass-card rounded-xl p-4 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="500">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-10 text-sm md:text-base text-blue-100">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-10 text-sm md:text-base text-red-100">
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-linkti-blue" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="h-5 w-5 text-linkti-red" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>
               <span>Taxa fixa de R$300</span>
             </div>
             
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-linkti-blue" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="h-5 w-5 text-linkti-red" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>
               <span>Frete grátis</span>
             </div>
             
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-linkti-blue" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="h-5 w-5 text-linkti-red" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>
               <span>Orçamento antes da recuperação</span>
             </div>
             
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-linkti-blue" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="h-5 w-5 text-linkti-red" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>
               <span>100% autorizado Apple</span>

@@ -6,17 +6,26 @@ import Process from '@/components/Process';
 import Testimonials from '@/components/Testimonials';
 import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 import AOS from 'aos';
 
 const Index = () => {
   useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: false,
+      easing: 'ease-in-out',
+    });
+    
     // Refresh AOS when the component mounts
     AOS.refresh();
   }, []);
   
   return (
     <div className="min-h-screen flex flex-col">
-      <main>
+      <Navbar />
+      <main className="pt-16">
         <Hero />
         <Benefits />
         <Process />

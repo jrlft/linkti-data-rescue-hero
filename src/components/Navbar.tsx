@@ -39,25 +39,14 @@ const Navbar = () => {
       <div className="container px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/0dd9fc2a-b42b-4b05-9c01-2a5b43526189.png" 
+            src="/lovable-uploads/logolink.png" 
             alt="Link TI" 
             className="h-12 w-auto"
           />
         </div>
         
         {/* Desktop Menu - com mais espaçamento */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <div className="flex items-center mr-6">
-            <img 
-              src="/apple-logo.svg" 
-              alt="Apple" 
-              className="h-5 w-auto mr-2 text-white" 
-            />
-            <span className={`text-sm font-medium ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
-              Centro de Serviço Autorizado
-            </span>
-          </div>
-          
+        <nav className="hidden md:flex items-center space-x-8 ml-12">
           <button 
             onClick={() => scrollToSection('beneficios')}
             className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-gray-800' : 'text-red-100'}`}
@@ -69,12 +58,6 @@ const Navbar = () => {
             className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-gray-800' : 'text-red-100'}`}
           >
             Como Funciona
-          </button>
-          <button 
-            onClick={() => scrollToSection('depoimentos')}
-            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-gray-800' : 'text-red-100'}`}
-          >
-            Depoimentos
           </button>
           <Button 
             size="sm" 
@@ -100,16 +83,6 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 px-6 flex flex-col space-y-4">
-          <div className="flex items-center mb-2">
-            <img 
-              src="/apple-logo.svg" 
-              alt="Apple" 
-              className="h-5 w-auto mr-2" 
-            />
-            <span className="text-gray-800 text-sm">
-              Centro de Serviço Autorizado
-            </span>
-          </div>
           <button 
             onClick={() => scrollToSection('beneficios')}
             className="text-gray-800 hover:text-linkti-red text-sm font-medium"
@@ -121,12 +94,6 @@ const Navbar = () => {
             className="text-gray-800 hover:text-linkti-red text-sm font-medium"
           >
             Como Funciona
-          </button>
-          <button 
-            onClick={() => scrollToSection('depoimentos')}
-            className="text-gray-800 hover:text-linkti-red text-sm font-medium"
-          >
-            Depoimentos
           </button>
           <Button 
             size="sm" 

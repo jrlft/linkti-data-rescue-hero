@@ -11,15 +11,28 @@ import AOS from 'aos';
 
 const Index = () => {
   useEffect(() => {
-    // Initialize AOS
+    // Initialize AOS com configurações mais intensas
     AOS.init({
       duration: 800,
       once: false,
-      easing: 'ease-in-out',
+      easing: 'ease-out',
+      mirror: true,
+      offset: 120,
+      delay: 100,
     });
     
     // Refresh AOS when the component mounts
     AOS.refresh();
+
+    // Reaplique AOS quando a janela for redimensionada
+    const handleResize = () => {
+      AOS.refresh();
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
   
   return (

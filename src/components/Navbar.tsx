@@ -33,51 +33,52 @@ const Navbar = () => {
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+        isScrolled ? 'bg-white shadow-md py-2' : 'bg-gradient-to-r from-red-800/90 to-red-900/90 backdrop-blur-sm py-4'
       }`}
     >
       <div className="container px-4 md:px-6 flex items-center justify-between">
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center">
           <img 
-            src="/lovable-uploads/658fd69d-fa93-4cb6-be34-a4473e5ff4a5.png" 
+            src="/lovable-uploads/0dd9fc2a-b42b-4b05-9c01-2a5b43526189.png" 
             alt="Link TI" 
             className="h-12 w-auto"
           />
-          <div className="flex items-center">
+        </div>
+        
+        {/* Desktop Menu - com mais espaçamento */}
+        <nav className="hidden md:flex items-center space-x-8">
+          <div className="flex items-center mr-6">
             <img 
               src="/apple-logo.svg" 
               alt="Apple" 
-              className="h-5 w-auto mr-2" 
+              className="h-5 w-auto mr-2 text-white" 
             />
             <span className={`text-sm font-medium ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
               Centro de Serviço Autorizado
             </span>
           </div>
-        </div>
-        
-        {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center space-x-6">
+          
           <button 
             onClick={() => scrollToSection('beneficios')}
-            className={`text-sm font-medium hover:text-linkti-red transition-colors ${isScrolled ? 'text-gray-800' : 'text-white'}`}
+            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-gray-800' : 'text-red-100'}`}
           >
             Benefícios
           </button>
           <button 
             onClick={() => scrollToSection('processo')}
-            className={`text-sm font-medium hover:text-linkti-red transition-colors ${isScrolled ? 'text-gray-800' : 'text-white'}`}
+            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-gray-800' : 'text-red-100'}`}
           >
             Como Funciona
           </button>
           <button 
             onClick={() => scrollToSection('depoimentos')}
-            className={`text-sm font-medium hover:text-linkti-red transition-colors ${isScrolled ? 'text-gray-800' : 'text-white'}`}
+            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-gray-800' : 'text-red-100'}`}
           >
             Depoimentos
           </button>
           <Button 
             size="sm" 
-            className="bg-whatsapp hover:bg-whatsapp/90 text-white"
+            className="bg-whatsapp hover:bg-whatsapp/90 text-white font-medium"
             onClick={() => window.open('https://wa.me/556536216000', '_blank')}
           >
             WhatsApp
@@ -99,6 +100,16 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 px-6 flex flex-col space-y-4">
+          <div className="flex items-center mb-2">
+            <img 
+              src="/apple-logo.svg" 
+              alt="Apple" 
+              className="h-5 w-auto mr-2" 
+            />
+            <span className="text-gray-800 text-sm">
+              Centro de Serviço Autorizado
+            </span>
+          </div>
           <button 
             onClick={() => scrollToSection('beneficios')}
             className="text-gray-800 hover:text-linkti-red text-sm font-medium"
@@ -119,7 +130,7 @@ const Navbar = () => {
           </button>
           <Button 
             size="sm" 
-            className="bg-whatsapp hover:bg-whatsapp/90 text-white w-full"
+            className="bg-whatsapp hover:bg-whatsapp/90 text-white w-full font-medium"
             onClick={() => window.open('https://wa.me/556536216000', '_blank')}
           >
             WhatsApp

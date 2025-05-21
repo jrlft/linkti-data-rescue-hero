@@ -85,7 +85,7 @@ const CallToAction = () => {
             </div>
           </div>
           
-          <div className="space-y-6" data-aos="fade-up" data-aos-delay="700">
+          <div data-aos="fade-up" data-aos-delay="700">
             <Button 
               size="lg" 
               className="bg-whatsapp text-white hover:bg-whatsapp/90 hover:scale-105 transition-all duration-300 shadow-lg"
@@ -94,10 +94,6 @@ const CallToAction = () => {
               Fale Conosco no WhatsApp
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            
-            <p className="text-sm text-white/70">
-              Resposta imediata | Atendimento personalizado | Solução definitiva
-            </p>
           </div>
         </div>
       </div>

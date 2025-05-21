@@ -18,27 +18,27 @@ const Hero = () => {
       </div>
 
       <div className="container px-4 md:px-6 flex flex-col lg:flex-row items-center relative z-10">
-        <div className="flex-1 space-y-6 text-center lg:text-left lg:pr-8 mb-10 lg:mb-0" data-aos="fade-right" data-aos-delay="100">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-center">
+        <div className="flex-1 space-y-6 lg:pr-8 mb-10 lg:mb-0" data-aos="fade-right" data-aos-delay="100">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
             <span className="block mb-2">Perdeu seus dados em um</span>
             <span className="text-gradient bg-gradient-to-r from-white to-red-100">dispositivo Apple?</span>
           </h1>
           
-          <h2 className="text-xl md:text-2xl font-medium text-red-50 max-w-2xl mx-auto text-justify">
+          <h2 className="text-xl md:text-2xl font-medium text-red-50 max-w-2xl">
             A Link TI agora é <span className="relative inline-block">
               <span className="relative z-10">parceira oficial homologada pela Apple</span>
               <span className="absolute bottom-0 left-0 w-full h-2 bg-red-500/30"></span>
             </span> para recuperação de dados de Mac, iPhone, iPad e armazenamentos externos.
           </h2>
           
-          <div className="glass-card p-5 my-6 max-w-xl mx-auto lg:mx-0 bg-red-800/40 backdrop-blur-md border border-red-700/40" data-aos="fade-up" data-aos-delay="200">
-            <p className="text-yellow-100 font-medium text-justify">
+          <div className="glass-card p-5 my-6 max-w-xl bg-red-800/40 backdrop-blur-md border border-red-700/40" data-aos="fade-up" data-aos-delay="200">
+            <p className="text-yellow-100 font-medium">
               <span className="uppercase font-bold bg-yellow-500 text-red-900 px-2 py-1 rounded mr-2">URGENTE:</span> 
               A cada minuto que passa, aumenta o risco de perda permanente dos seus dados. Não deixe para depois o que pode ser resolvido agora com nossa solução certificada pela Apple.
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="300">
+          <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="300">
             <Button 
               size="lg" 
               className="bg-whatsapp text-white hover:bg-whatsapp/90 hover:scale-105 transition-all duration-300 shadow-lg font-medium"
@@ -69,7 +69,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-red-500/20 blur-3xl rounded-full"></div>
             
             {/* Hero image - aumentada em 50% */}
-            <div className="relative floating-delayed animated-border transform scale-[1.65]">
+            <div className="relative floating-delayed animated-border transform scale-150">
               <img 
                 src="/lovable-uploads/767c2420-5b42-4f67-9206-043cc8208169.png" 
                 alt="Recuperação de dados de dispositivos Apple" 

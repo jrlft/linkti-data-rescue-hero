@@ -39,13 +39,13 @@ const Navbar = () => {
       <div className="container px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/logolink.png" 
+            src="/lovable-uploads/5c4dd705-e41a-435b-81f1-b1d59dae7459.png" 
             alt="Link TI" 
             className="h-12 w-auto"
           />
         </div>
         
-        {/* Desktop Menu - com mais espaçamento */}
+        {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-8 ml-12">
           <button 
             onClick={() => scrollToSection('beneficios')}

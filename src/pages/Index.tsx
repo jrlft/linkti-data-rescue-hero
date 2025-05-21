@@ -10,7 +10,7 @@ import AOS from 'aos';
 
 const Index = () => {
   useEffect(() => {
-    // Initialize AOS com configurações mais intensas
+    // Initialize AOS with enhanced settings
     AOS.init({
       duration: 800,
       once: false,
@@ -23,7 +23,7 @@ const Index = () => {
     // Refresh AOS when the component mounts
     AOS.refresh();
 
-    // Reaplique AOS quando a janela for redimensionada
+    // Reapply AOS when window is resized
     const handleResize = () => {
       AOS.refresh();
     };

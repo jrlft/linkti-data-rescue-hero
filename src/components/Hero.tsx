@@ -19,12 +19,12 @@ const Hero = () => {
 
       <div className="container px-4 md:px-6 flex flex-col lg:flex-row items-center relative z-10">
         <div className="flex-1 space-y-6 text-center lg:text-left lg:pr-8 mb-10 lg:mb-0" data-aos="fade-right" data-aos-delay="100">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-center lg:text-left">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-center">
             <span className="block mb-2">Perdeu seus dados em um</span>
             <span className="text-gradient bg-gradient-to-r from-white to-red-100">dispositivo Apple?</span>
           </h1>
           
-          <h2 className="text-xl md:text-2xl font-medium text-red-50 max-w-2xl mx-auto lg:mx-0 text-justify">
+          <h2 className="text-xl md:text-2xl font-medium text-red-50 max-w-2xl mx-auto text-justify">
             A Link TI agora é <span className="relative inline-block">
               <span className="relative z-10">parceira oficial homologada pela Apple</span>
               <span className="absolute bottom-0 left-0 w-full h-2 bg-red-500/30"></span>
@@ -68,8 +68,8 @@ const Hero = () => {
             {/* Glow effect */}
             <div className="absolute inset-0 bg-red-500/20 blur-3xl rounded-full"></div>
             
-            {/* Hero image - aumentada ainda mais (50% maior) */}
-            <div className="relative floating-delayed animated-border scale-[1.65] transform">
+            {/* Hero image - aumentada em 50% */}
+            <div className="relative floating-delayed animated-border transform scale-[1.65]">
               <img 
                 src="/lovable-uploads/767c2420-5b42-4f67-9206-043cc8208169.png" 
                 alt="Recuperação de dados de dispositivos Apple" 

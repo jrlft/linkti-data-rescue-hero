@@ -1,15 +1,11 @@
-
 import React from 'react';
 import { Database, ArrowRight, SmartphoneIcon, HardDrive, Computer, ArchiveRestore } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Benefits = () => {
   const handleWhatsAppClick = () => {
     window.open('https://wa.me/556536216000', '_blank');
   };
-
-  return (
-    <section className="py-24 bg-white relative overflow-hidden" id="beneficios">
+  return <section className="py-24 bg-white relative overflow-hidden" id="beneficios">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute w-96 h-96 rounded-full bg-linkti-blue/5 blur-3xl -top-48 -left-48"></div>
@@ -124,19 +120,12 @@ const Benefits = () => {
             </p>
           </div>
           
-          <Button 
-            size="lg" 
-            className="bg-linkti-blue hover:bg-linkti-darkblue text-white hover:scale-105 transition-all duration-300 shadow-lg"
-            onClick={handleWhatsAppClick}
-            data-aos="zoom-in" data-aos-delay="300"
-          >
+          <Button size="lg" onClick={handleWhatsAppClick} data-aos="zoom-in" data-aos-delay="300" className="bg-linkti-blue hover:bg-linkti-darkblue text-white hover:scale-105 transition-all duration-300 shadow-lg bg-green-600 hover:bg-green-500">
             Recupere Seus Dados Agora
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Benefits;

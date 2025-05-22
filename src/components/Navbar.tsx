@@ -33,13 +33,13 @@ const Navbar = () => {
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-gradient-to-r from-red-800/90 to-red-900/90 backdrop-blur-sm py-4'
+        isScrolled ? 'bg-gradient-to-r from-red-800/90 to-red-900/90 backdrop-blur-sm py-2' : 'bg-gradient-to-r from-red-800/90 to-red-900/90 backdrop-blur-sm py-4'
       }`}
     >
       <div className="container px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/faaadda5-98aa-4d41-b51f-ea7d20f66714.png" 
+            src="/lovable-uploads/eaf2f506-c58d-433b-8e56-42d9c4972e61.png" 
             alt="Link TI" 
             className="h-12 w-auto"
           />
@@ -49,19 +49,19 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8 ml-12">
           <button 
             onClick={() => scrollToSection('beneficios')}
-            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-gray-800' : 'text-red-100'}`}
+            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-red-100' : 'text-red-100'}`}
           >
             Benefícios
           </button>
           <button 
             onClick={() => scrollToSection('processo')}
-            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-gray-800' : 'text-red-100'}`}
+            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-red-100' : 'text-red-100'}`}
           >
             Como Funciona
           </button>
           <button 
             onClick={() => scrollToSection('duvidas')}
-            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-gray-800' : 'text-red-100'}`}
+            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-red-100' : 'text-red-100'}`}
           >
             Dúvidas Frequentes
           </button>
@@ -80,8 +80,8 @@ const Navbar = () => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? 
-            <X className={`h-6 w-6 ${isScrolled ? 'text-gray-800' : 'text-white'}`} /> : 
-            <Menu className={`h-6 w-6 ${isScrolled ? 'text-gray-800' : 'text-white'}`} />
+            <X className={`h-6 w-6 ${isScrolled ? 'text-white' : 'text-white'}`} /> : 
+            <Menu className={`h-6 w-6 ${isScrolled ? 'text-white' : 'text-white'}`} />
           }
         </button>
       </div>

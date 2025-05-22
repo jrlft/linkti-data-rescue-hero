@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-gradient-to-r from-red-800/90 to-red-900/90 backdrop-blur-sm py-2' : 'bg-gradient-to-r from-red-800/90 to-red-900/90 backdrop-blur-sm py-4'
+        isScrolled ? 'bg-gray-100/90 backdrop-blur-sm py-2' : 'bg-gray-100/90 backdrop-blur-sm py-4'
       }`}
     >
       <div className="container px-4 md:px-6 flex items-center justify-between">
@@ -49,19 +49,19 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8 ml-12">
           <button 
             onClick={() => scrollToSection('beneficios')}
-            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-red-100' : 'text-red-100'}`}
+            className={`text-sm font-medium hover:text-red-800 transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}
           >
             Benefícios
           </button>
           <button 
             onClick={() => scrollToSection('processo')}
-            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-red-100' : 'text-red-100'}`}
+            className={`text-sm font-medium hover:text-red-800 transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}
           >
             Como Funciona
           </button>
           <button 
             onClick={() => scrollToSection('duvidas')}
-            className={`text-sm font-medium hover:text-white transition-colors ${isScrolled ? 'text-red-100' : 'text-red-100'}`}
+            className={`text-sm font-medium hover:text-red-800 transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}
           >
             Dúvidas Frequentes
           </button>
@@ -80,8 +80,8 @@ const Navbar = () => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? 
-            <X className={`h-6 w-6 ${isScrolled ? 'text-white' : 'text-white'}`} /> : 
-            <Menu className={`h-6 w-6 ${isScrolled ? 'text-white' : 'text-white'}`} />
+            <X className={`h-6 w-6 ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`} /> : 
+            <Menu className={`h-6 w-6 ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`} />
           }
         </button>
       </div>
